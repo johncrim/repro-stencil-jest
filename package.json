@@ -22,11 +22,13 @@
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
+    "test.spec": "stencil test --spec",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.13.0",
+    "rxjs": "^7.5.4"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
