@@ -28,3 +28,12 @@ Yields this error:
       at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
       at Object.<anonymous> (src/components/my-component/my-component.tsx:3:1)
 ```
+
+To fix, downgrade to @stencil/core version 2.13.0 :
+
+```
+npm add @stencil/core@2.13.0
+# Clear jest cache
+npm run jest -- --clear-cache
+npm run test.spec
+```
