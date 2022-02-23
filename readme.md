@@ -5,7 +5,7 @@ To reproduce:
 ```bash
 git clone git@github.com:johncrim/repro-stencil-jest.git
 npm install
-npm run test.spec
+npm run jest
 ```
 
 Yields this error:
@@ -35,5 +35,5 @@ To fix, downgrade to @stencil/core version 2.13.0 :
 npm add @stencil/core@2.13.0
 # Clear jest cache
 npm run jest -- --clear-cache
-npm run test.spec
+npm run jest
 ```
